@@ -35,7 +35,8 @@ export class SingleHouseComponent implements OnInit {
   }  
 
   submitApplication() {
-    console.log(this.applyForm.value.firstName, this.applyForm.value.lastName, this.applyForm.value.email);
+    console.log(this.applyForm.value.firstName, this.applyForm.value.lastName);
+    console.log(this.applyForm.value.email);
   }
   
 }

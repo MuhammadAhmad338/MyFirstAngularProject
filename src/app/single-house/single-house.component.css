@@ -19,7 +19,15 @@ input {
     outline: none;
     border: none;
     border-bottom: 1px solid black;
+}
 
+main {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
 }
 
 button {
