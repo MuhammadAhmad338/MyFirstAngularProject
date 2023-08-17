@@ -1,0 +1,22 @@
+{
+  "locations": [
+      {
+        "id": 1,
+        "name": "Warm Bed Housing Suport",
+        "city": "San Francisco",
+        "state": "CA"
+      }, 
+      {
+          "id": 2,
+          "name": "A113 Housing Support",
+          "city": "San Diago",
+          "state": "CA"
+      },
+       {
+          "id": 3,
+          "name": "A11 Housing Company",
+          "city": "Washington",
+          "state": "Washington"
+      }
+  ]
+}

@@ -1,0 +1,20 @@
+<div class="crisis-list">
+  <h3>CRISIS CENTER</h3>
+  <p>Get your crisis here</p>
+  <div class="search">
+    <label for="">Search by City:</label>
+    <input type="text" #filter placeholder="Ex: Chicago" />
+    <button (click)="filterLocationResults(filter.value)">Search</button>
+  </div>
+  <article *ngFor="let house of filteredHousingList">
+    <p>{{ house.id }}</p>
+    <p>{{ house.name }}</p>
+    <p>{{ house.city }}</p>
+    <p>{{ house.state }}</p>
+    <a [routerLink]="['/crisis-list', house.id]">Learn More</a>
+  </article>
+  <button (click)="updateCount()">Increase Count</button>
+  <p>{{ count }}</p>
+  <button (click)="decreaseCount()">Decrease Count</button>
+  <a [routerLink]="['/heroes-list']">HeroesList</a>
+</div>

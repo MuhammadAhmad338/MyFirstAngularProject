@@ -1,0 +1,28 @@
+<p>Single-house works!</p>
+<main>
+  <p>{{ singleHouse?.id }}</p>
+  <p>{{ singleHouse?.name }}</p>
+  <p>{{ singleHouse?.city }}</p>
+  <p>{{ singleHouse?.state }}</p>
+  <form [formGroup]="applyForm">
+    <label for="first-name">Enter your firstname:</label>
+    <input
+      type="text"
+      placeholder="Enter your firstName:"
+      formControlName="firstName"
+    />
+    <label for="last-name">Enter your lastname:</label>
+    <input
+      type="text"
+      placeholder="Enter your lastname:"
+      formControlName="lastName"
+    />
+    <label for="email">Enter your email:</label>
+    <input
+      type="text"
+      placeholder="Enter your email:"
+      formControlName="email"
+    />
+    <button (click)="submitApplication()" class="primary">Apply Now</button>
+  </form>
+</main>
